@@ -1,0 +1,39 @@
+.work {
+  &__col-1 {
+    padding-right: 7rem;
+    grid-column: col-start 1;
+    line-height: 2rem;
+    margin: 6rem 0rem;
+  
+      &__p {
+        font-weight: $thin-font;
+        font-family: $text-font-family;
+        color: $text-font-colour;
+      }
+      &__link {
+        color: #6772E5;
+        font-family: $text-font-family;
+      }
+      @media screen and (max-width: 800px) {
+        padding-right: 2rem;
+      }  
+      @media screen and (max-width: 600px) {
+        grid-column: col-start / col-end ;
+        padding-left: 2rem;
+        padding-right: 0rem;
+      }
+  }
+  &__col-2 {
+    padding-left: 7rem;
+    margin: 6rem 0rem;
+    grid-column: inner-col-start 2/ inner-col-end ;
+    line-height:2rem;
+
+    @media screen and (max-width: 800px) {
+      padding-left: 2rem;
+    }
+    @media screen and (max-width: 600px) {
+      grid-column: col-start / col-end ;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.gallery {
+   // background-color: red;
+    grid-column: col-start/col-end;
+        h3 {
+            font-size: 1.7rem;
+        }
+  &__section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 1.2rem;
+    margin-bottom : 2.7rem;
+        &__box {
+            display: grid;
+            &__image {
+                img {
+                    max-width:100%;
+                }
+            }
+        }
+        
+  }
+}
+

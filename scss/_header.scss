@@ -1,0 +1,126 @@
+.navStyle {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: .5rem;
+  padding: .5rem .9rem ;
+  font-size: 1.1rem;
+}
+
+%btn {
+  @extend .navStyle;
+    color:white;
+    background: #3ECF8E;
+    list-style-type: none;
+}
+.Navbar {
+    margin: .9rem .5rem auto .5rem;
+    position: sticky;
+    display: flex;
+    padding: 18px;
+    font-family: sans-serif;
+    color: $grey;
+    flex-direction: row;
+      &__Link {
+        margin-right: .5rem;
+       
+          &__signUpbtn {
+            @extend .navStyle;
+            color:white;
+            background: #3ECF8E;
+            list-style-type: none;
+            margin-left: .3rem
+          }
+          &__logIn{
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: .5rem;
+            padding: .5rem .9rem ;
+            background-color:white;
+            color: #3ECF8E;
+            border: 1px solid #3ECF8E;
+            list-style-type: none;
+            margin-left: .3rem;
+            font-size: 1.1rem;
+          }
+          a {
+           @extend .navStyle;
+          }
+      }
+      &__Items {
+          display: flex;
+          margin-left:auto;
+        }
+      &__Items--right {
+      margin-left:auto;
+      }
+      &__Link-toggle {
+          display: none;
+        }
+  }
+  
+  .header {
+      grid-column: col-start / col-end; 
+     // background-color: green;
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+         &__heading-1 {
+           color: #3ECF8E;
+         }
+         &__input {
+          width: 98%;
+          height: 3.8rem;
+          max-width: 100%;
+          display: flex;
+          padding: .7rem;
+          justify-content: space-between;
+          background: #F8F8F8;
+            input {
+              width: 100%;
+              border: none;
+              border-radius: 5px;
+              background: #F8F8F8;
+              font-size: 1rem;
+              padding: .9rem;
+            }
+            button {
+              @extend %btn;
+              width: 9%;
+              font-size: 1rem;
+            }
+         }
+  }
+  
+@media only screen and (max-width: 768px) {
+    .Navbar__Items,
+    .Navbar {
+      flex-direction: column;
+      //z-index: 2;
+    }
+    .Navbar {
+        &__Items {
+            display:none;
+        }
+        &__Items--right {
+            margin-left:0;
+           // z-index: 2;
+        }
+        &__ToggleShow {
+            display: flex;
+        }
+      //   &__Link-brand {
+      //     max-width: 100%;
+      //     img {
+      //         width: 10%;
+      //     }
+      // }
+        &__Link-toggle {
+            align-self: flex-end;
+            display: initial;
+            position: absolute;
+            cursor: pointer;
+        } 
+    }
+}

@@ -1,0 +1,37 @@
+.testimonial {
+    background-image: url("../img/testimonial__background.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-color: #031D5A;
+    grid-column : full-start / full-end ;
+    display: grid;
+    //margin: 3rem;
+    grid-template-columns:[bleed-start] 1fr [column-start] repeat(2, [inner-col-start] minmax(min-content, 40vw) [inner-col-end] ) [column-end] 1fr[bleed-end];;
+       &__sec {
+        grid-column: column-start/ column-end;
+        &__title {
+            margin-top: 3rem;
+            color:#3ECF8E;
+            font-size: 1.7rem;
+        }
+       }
+        &__section {
+          grid-column: column-start/ column-end;
+          display: grid;
+          grid-gap: 4rem;
+          margin: 3rem 0rem 8rem 0rem;
+          grid-template-columns:  repeat(auto-fit, minmax(20rem, 1fr));
+          &__box{
+              background-color:#FFFF ;
+              border-radius: 5px;
+              padding: 2rem;
+              &__name{
+                  display: flex;
+              }
+              &__paragraph {
+                  margin-top: .9rem;
+              }
+          }
+        }
+  
+}
