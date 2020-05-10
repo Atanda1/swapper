@@ -6,7 +6,7 @@
     grid-column : full-start / full-end ;
     display: grid;
     //margin: 3rem;
-    grid-template-columns:[bleed-start] 1fr [column-start] repeat(2, [inner-col-start] minmax(min-content, 40vw) [inner-col-end] ) [column-end] 1fr[bleed-end];;
+    grid-template-columns:[bleed-start] minmax(1.8rem,1fr) [column-start] repeat(2, [inner-col-start] minmax(min-content, 40vw) [inner-col-end] ) [column-end] minmax(1.8rem,1fr)[bleed-end];;
        &__sec {
         grid-column: column-start/ column-end;
         &__title {
