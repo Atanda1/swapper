@@ -5,7 +5,7 @@ $font-colour: #383838;
 $thin-font: 200;
 $text-font-family: Source Sans Pro;
 $text-font-colour: #6B7C93;
-$small-font: .8rem;
+$small-font: 1.1rem;
 
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins|Source+Sans+Pro&display=swap');
@@ -39,10 +39,10 @@ time, mark, audio, video {
 }
 
 html {
-    font-size: 62.5%;
-    @media screen and (max-width: 95em) {
-       font-size: 55%;
-    }
+    font-size: 70%;
+    // @media screen and (max-width: 95em) {
+    //    font-size: 55%;
+    // }
     
 }
 /* HTML5 display-role reset for older browsers */
@@ -105,6 +105,7 @@ table {
 .ts
 {
     margin-top: .7rem;
+    font-size: 1.3rem;
 }
 .ss{margin-top: .8rem;
     font-weight: $thin-font;

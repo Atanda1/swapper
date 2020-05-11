@@ -27,12 +27,7 @@ time, mark, audio, video {
 }
 
 html {
-  font-size: 62.5%;
-}
-@media screen and (max-width: 95em) {
-  html {
-    font-size: 55%;
-  }
+  font-size: 70%;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -101,6 +96,7 @@ table {
 
 .ts {
   margin-top: 0.7rem;
+  font-size: 1.3rem;
 }
 
 .ss {
@@ -114,7 +110,7 @@ table {
 }
 
 .th {
-  font-size: 0.8rem;
+  font-size: 1.1rem;
 }
 
 .work__col-1 {
@@ -200,15 +196,22 @@ table {
 
 .footer {
   grid-column: col-start/col-end;
+  align-content: center;
 }
 .footer__section {
   display: grid;
+  grid-gap: auto;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   border-bottom: 1px solid #DBDBDB;
   padding: 1rem 0 3rem 0rem;
 }
 .footer h3 {
-  padding-top: 1.4rem;
+  font-size: 1.3rem;
+  padding-top: 1.1rem;
+}
+.footer h5 {
+  padding-bottom: 1rem;
+  font-size: 1.1rem;
 }
 
 .blank {
@@ -375,13 +378,8 @@ table {
 
 .container {
   display: grid;
-  grid-template-rows: min-content repeat(6, min-content);
+  grid-template-rows: min-content repeat(5, min-content) 20vh;
   grid-template-columns: [full-start] minmax(1rem, auto) [col-start] repeat(2, [inner-col-start] minmax(min-content, 30vw) [inner-col-end]) [col-end] minmax(1rem, auto) [full-end];
-}
-@media screen and (max-width: 80em) {
-  .container {
-    font-size: 70%;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
