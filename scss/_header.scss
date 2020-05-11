@@ -100,6 +100,9 @@
          }
   }
   
+  @media screen and (max-width: 75em) {
+    font-size: 40%;
+ }  
 @media only screen and (max-width: 768px) {
     .Navbar__Items,
     .Navbar {
@@ -131,4 +134,11 @@
         } 
     }
 }
-  }
+ }
+
+ .Navbar__Link {
+     
+  @media screen and (max-width: 75em) {
+    margin-right: 0rem;
+ }
+ }

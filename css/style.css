@@ -34,11 +34,6 @@ html {
     font-size: 55%;
   }
 }
-@media screen and (max-width: 75em) {
-  html {
-    font-size: 50%;
-  }
-}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -338,6 +333,11 @@ table {
     width: 20%;
   }
 }
+@media screen and (max-width: 75em) {
+  .header {
+    font-size: 40%;
+  }
+}
 @media only screen and (max-width: 768px) {
   .header .Navbar__Items,
 .header .Navbar {
@@ -360,6 +360,12 @@ table {
   }
 }
 
+@media screen and (max-width: 75em) {
+  .Navbar__Link {
+    margin-right: 0rem;
+  }
+}
+
 .header__heading-1 {
   font-size: 4rem;
 }
@@ -371,6 +377,11 @@ table {
   display: grid;
   grid-template-rows: min-content repeat(6, min-content);
   grid-template-columns: [full-start] minmax(1rem, auto) [col-start] repeat(2, [inner-col-start] minmax(min-content, 30vw) [inner-col-end]) [col-end] minmax(1rem, auto) [full-end];
+}
+@media screen and (max-width: 80em) {
+  .container {
+    font-size: 70%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
