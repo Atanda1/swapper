@@ -37,6 +37,11 @@ body {
   margin: 0;
   padding: 0;
 }
+@media screen and (max-width: 320px) {
+  body {
+    margin: 0.2rem;
+  }
+}
 
 ol, ul {
   list-style: none;
@@ -120,14 +125,14 @@ table {
 }
 @media screen and (max-width: 800px) {
   .work__col-1 {
-    padding-right: 2rem;
+    padding-right: 1rem;
+    padding-left: 0rem;
   }
 }
 @media screen and (max-width: 600px) {
   .work__col-1 {
     grid-column: col-start/col-end;
-    padding-left: 2rem;
-    padding-right: 0rem;
+    padding-right: 0.5rem;
   }
 }
 .work__col-2 {
@@ -138,12 +143,13 @@ table {
 }
 @media screen and (max-width: 800px) {
   .work__col-2 {
-    padding-left: 2rem;
+    padding-left: 1rem;
   }
 }
 @media screen and (max-width: 600px) {
   .work__col-2 {
     grid-column: col-start/col-end;
+    padding-left: 0.5rem;
   }
 }
 
