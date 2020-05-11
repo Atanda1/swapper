@@ -38,6 +38,15 @@ time, mark, audio, video {
  //   outline: 2px solid red;
 }
 
+html {
+    font-size: 62.5%;
+    @media screen and (max-width: 95em) {
+       font-size: 55%;
+    }
+    @media screen and (max-width: 75em) {
+        font-size: 50%;
+     }
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {

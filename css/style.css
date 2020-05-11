@@ -26,6 +26,20 @@ time, mark, audio, video {
   color: #383838;
 }
 
+html {
+  font-size: 62.5%;
+}
+@media screen and (max-width: 95em) {
+  html {
+    font-size: 55%;
+  }
+}
+@media screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -160,7 +174,7 @@ table {
   background-color: #031D5A;
   grid-column: full-start/full-end;
   display: grid;
-  grid-template-columns: [bleed-start] minmax(1.8rem, 1fr) [column-start] repeat(2, [inner-col-start] minmax(min-content, 40vw) [inner-col-end]) [column-end] minmax(1.8rem, 1fr) [bleed-end];
+  grid-template-columns: [bleed-start] minmax(1rem, auto) [column-start] repeat(2, [inner-col-start] minmax(min-content, 30vw) [inner-col-end]) [column-end] minmax(1rem, auto) [bleed-end];
 }
 .testimonial__sec {
   grid-column: column-start/column-end;
@@ -175,7 +189,7 @@ table {
   display: grid;
   grid-gap: 4rem;
   margin: 3rem 0rem 8rem 0rem;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
 .testimonial__section__box {
   background-color: #FFFF;
@@ -204,7 +218,7 @@ table {
 
 .blank {
   grid-column: full-start/full-end;
-  height: 10rem;
+  height: 5rem;
   border-bottom: 1px solid #DBDBDB;
 }
 
@@ -310,33 +324,42 @@ table {
   font-size: 1rem;
   padding: 0.9rem;
 }
+@media only screen and (max-width: 40em) {
+  .header__input input {
+    width: 80%;
+  }
+}
 .header__input button {
   width: 9%;
   font-size: 1rem;
 }
-
+@media only screen and (max-width: 40em) {
+  .header__input button {
+    width: 20%;
+  }
+}
 @media only screen and (max-width: 768px) {
-  .Navbar__Items,
-.Navbar {
+  .header .Navbar__Items,
+.header .Navbar {
     flex-direction: column;
   }
-
-  .Navbar__Items {
+  .header .Navbar__Items {
     display: none;
   }
-  .Navbar__Items--right {
+  .header .Navbar__Items--right {
     margin-left: 0;
   }
-  .Navbar__ToggleShow {
+  .header .Navbar__ToggleShow {
     display: flex;
   }
-  .Navbar__Link-toggle {
+  .header .Navbar__Link-toggle {
     align-self: flex-end;
     display: initial;
     position: absolute;
     cursor: pointer;
   }
 }
+
 .header__heading-1 {
   font-size: 4rem;
 }
@@ -347,7 +370,6 @@ table {
 .container {
   display: grid;
   grid-template-rows: min-content repeat(6, min-content);
-  justify-content: space-around;
   grid-template-columns: [full-start] minmax(1rem, auto) [col-start] repeat(2, [inner-col-start] minmax(min-content, 30vw) [inner-col-end]) [col-end] minmax(1rem, auto) [full-end];
 }
 

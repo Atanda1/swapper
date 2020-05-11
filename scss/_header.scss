@@ -84,11 +84,18 @@
               background: #F8F8F8;
               font-size: 1rem;
               padding: .9rem;
+              @media only screen and (max-width: 40em) {
+                width: 80%;
+          }
+
             }
             button {
               @extend %btn;
               width: 9%;
               font-size: 1rem;
+
+                @media only screen and (max-width: 40em) {
+                  width: 20%;
             }
          }
   }
@@ -124,3 +131,4 @@
         } 
     }
 }
+  }
