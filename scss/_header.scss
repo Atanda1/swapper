@@ -104,8 +104,11 @@
     font-size: 40%;
  }  
 @media only screen and (max-width: 768px) {
+
+
     .Navbar__Items,
     .Navbar {
+      display: none;
       flex-direction: column;
       //z-index: 2;
     }
@@ -142,3 +145,9 @@
     margin-right: 0rem;
  }
  }
+
+ @media screen and (max-width: 23.5em) {
+  .Navbar {
+    display: none;
+  }
+}  

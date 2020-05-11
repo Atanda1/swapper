@@ -344,6 +344,7 @@ table {
 @media only screen and (max-width: 768px) {
   .header .Navbar__Items,
 .header .Navbar {
+    display: none;
     flex-direction: column;
   }
   .header .Navbar__Items {
@@ -369,6 +370,11 @@ table {
   }
 }
 
+@media screen and (max-width: 23.5em) {
+  .Navbar {
+    display: none;
+  }
+}
 .header__heading-1 {
   font-size: 4rem;
 }
