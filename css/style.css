@@ -378,7 +378,7 @@ table {
 
 .container {
   display: grid;
-  grid-template-rows: min-content repeat(5, min-content) 20vh;
+  grid-template-rows: min-content repeat(5, min-content) 40vh;
   grid-template-columns: [full-start] minmax(1rem, auto) [col-start] repeat(2, [inner-col-start] minmax(min-content, 30vw) [inner-col-end]) [col-end] minmax(1rem, auto) [full-end];
 }
 
