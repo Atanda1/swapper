@@ -4,6 +4,12 @@
         h3 {
             font-size: 1.7rem;
         }
+    &__div {
+        display: flex;
+        &__span {
+            margin-left: auto;
+        }
+    }    
   &__section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));

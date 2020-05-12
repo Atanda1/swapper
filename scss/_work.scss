@@ -9,10 +9,12 @@
         font-weight: $thin-font;
         font-family: $text-font-family;
         color: $text-font-colour;
+        font-size: medium;
       }
       &__link {
         color: #6772E5;
         font-family: $text-font-family;
+        font-size: medium;
       }
       @media screen and (max-width: 800px) {
         padding-right: 1rem;

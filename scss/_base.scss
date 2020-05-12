@@ -112,3 +112,12 @@ table {
 }
 .sms {margin-top: .9rem; font-weight: 100;}
 .th {font-size: $small-font;}
+
+.in {display: flex;}
+.pad{
+     &-r {margin :0rem 1rem 1.1rem 0rem;
+     }
+     &-t {
+         padding-top: .5rem;
+     }
+}
