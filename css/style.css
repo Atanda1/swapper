@@ -503,6 +503,7 @@ table {
   .Navbar__Items,
 .Navbar {
     flex-direction: column;
+    padding: 2.3rem;
   }
 
   .Navbar__Items {
